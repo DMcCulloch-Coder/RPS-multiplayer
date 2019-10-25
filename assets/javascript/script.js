@@ -1,6 +1,5 @@
 // To Do:
 //
-$ printenv
 
 $(document).ready(function(){
     
