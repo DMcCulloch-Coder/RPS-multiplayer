@@ -20,7 +20,60 @@
             <span class="navbar-brand mx-auto h1">Rock, Paper, Scissors - Online</span>
         </nav>
 
+        <div class="input-group" id='user-signup'>
+            <input type="text" class="form-control" placeholder="Enter Username" aria-label="Username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="submit" id="submit">Submit</button>
+            </div>
+        </div>
 
+        <div class='container'>
+
+            <div class='row'>
+
+                <div class='col-8 card player-zone'>
+                    <div class='row d-flex justify-content-center'>
+                        <p id='player-name'>Player Name</p>
+                    </div>
+
+                    <div class="row d-flex justify-content-center">
+                        <p id='your-info'>Wins: <span id='player-wins'></span> Loses: <span id='player-loses'></span></p>
+                    </div>
+
+                    <div class='row d-flex justify-content-center'>
+                        <img src='assets/images/rock.jpg' alt='rock picture and button' />
+                    </div>
+
+                    <div class='row d-flex justify-content-center'>
+                        <img src='assets/images/paper.jpg' alt='paper picture and button' />
+                        <img src='assets/images/scissiors.jpg' alt='scissiors picture and button' />
+
+                    </div>
+
+                    <div class='row d-flex justify-content-center'>
+                        <p id='opponent-info'>Opponent Name: <span id='opponent-name'></span> Wins: <span id='opponent-wins'></span> Loses: <span id='opponent-loses'></span></p>
+                    </div>
+
+                </div>
+
+                <div class='col-4 card chat-box'>
+                    <div class='chat-archive'>
+
+                    </div>
+
+                    <div class="input-group mb-3 chat-entry row align-items-end">
+                        <input type="text" class="form-control" placeholder="Chat!" aria-label="Chat!" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Submit</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
 
 
         <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>

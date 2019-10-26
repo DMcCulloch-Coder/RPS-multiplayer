@@ -2,14 +2,59 @@ body {
     background-image: url(../images/seamless_paper_texture.png);
     background-repeat: repeat;
     font-family: 'Varela', sans-serif;
+    text-shadow: 2px 2px 2px gray;
+    color: purple
 
 }
 
+p {
+    text-shadow: 1px 1px 1px gray;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.container {
+    display: none;
+}
+
+.user-signup {
+    margin-top: 200px;
+    width: 80%;
+
+}
 
 .navbar {
-    font-size: 300%;
     text-align: center;
     font-family: 'Nova Square', cursive;
+
+}
+
+.navbar-brand {
+    font-size: 3rem;
+
+}
+
+.player-zone {
+    border: 2px solid black;
+
+
+}
+
+.chat-archive {
+    height: 400px;
+}
+
+.chat-box {
+    border: 2px solid black;
+
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 10px;
 
 }
 

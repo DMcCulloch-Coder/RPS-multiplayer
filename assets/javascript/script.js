@@ -19,7 +19,9 @@ $(document).ready(function(){
     firebase.analytics();
 
     let database = firebase.database();
-    database.ref("/").set({message: 'firebase rules!'})
+    let playersInGame = database.ref('/connections')
+    let arePlayersInGame = database.ref('.info/connected')
+
 
     // set global variables
 
@@ -30,8 +32,27 @@ $(document).ready(function(){
     
 
     // start program
+    arePlayersInGame.on('value', function(snapshot) {
+        if(snapshot.val()) {
+            let add = playersInGame.push(true);
+
+            add.onDisconnect().remove();
+
+        }
+    })
+
+    playersInGame.on('value', function(snapshot) {
+        //what happens when you add a player  if statments if there is player 1/2
 
 
+    })
 
+    $('#submit').on('click', function() {
+        $('.container').css('display', 'block')
+        $('#user-signup').css('display', 'none')
+    })
 
 })    
+
+
+
