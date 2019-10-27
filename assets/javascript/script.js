@@ -43,13 +43,24 @@ $(document).ready(function(){
 
     playersInGame.on('value', function(snapshot) {
         //what happens when you add a player  if statments if there is player 1/2
+        if (!snapshot.child('firstPlayer').exists) {
+            //create and set as first player if there is not first player
 
+        } 
+        if (snapshot.child('firstplayer').exists && !snapshot.child('secondPlayer').exists) {
+            //if first player exists and second player doesn't, set and make second player
+
+        }
+        if (snapshot.child('firstplayer').exists && snapshot.child('secondPlayer').exists) {
+            //if they both exist, make a spectator, reset display
+            
+        }
 
     })
 
     $('#submit').on('click', function() {
-        $('.container').css('display', 'block')
-        $('#user-signup').css('display', 'none')
+        $('.game').css('display', 'block')
+        $('.sign-in').css('display', 'none')
     })
 
 })    

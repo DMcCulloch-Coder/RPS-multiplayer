@@ -14,14 +14,18 @@ p {
 
 }
 
-.container {
+.game {
     display: none;
 }
 
 .user-signup {
-    margin-top: 200px;
     width: 80%;
 
+}
+
+.sign-in {
+    margin-top: 200px;
+    
 }
 
 .navbar {
@@ -42,7 +46,8 @@ p {
 }
 
 .chat-archive {
-    height: 400px;
+    height: 450px;
+
 }
 
 .chat-box {
@@ -55,6 +60,12 @@ img {
     width: 150px;
     border-radius: 50%;
     padding: 10px;
+    border: 1px solid gray;
+    margin: 10px;
 
 }
 
+#opponent-info {
+    margin: 5px;
+
+}
